@@ -14,7 +14,7 @@ for i in range(1,11,1):
 print(user_list)
 
 
-def jumble(word):   
+def jumble(word):              #function to jumble words
     jum=" "
     while word:
         pos=random.randrange(len(word))
@@ -22,7 +22,7 @@ def jumble(word):
         word=word[:pos]+word[(pos + 1):]
     return jum
 
-def sen_jumble(w):
+def sen_jumble(w):                  #function to jumble phrases
     l=[]
     for i in w:
         new = jumble(i)
